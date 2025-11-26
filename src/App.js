@@ -1,9 +1,11 @@
-import './App.css';
+import { Card, Navbar } from './components';
 
 function App() {
   return (
-    <h1>Hello, Javascript!</h1>
-  );
+    <>
+      <Navbar />
+    </>
+  );  
 }
 
 export default App;

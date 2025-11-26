@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/public/Fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav {
+    font-family: "SpaceMono";
+    font-size: 25px;
+    background-color: #3895d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    align-items: center;
+}
+
+.logo-head {
+    height: 65px;
+    width: 65px;
+    padding: 10px 25px 0 25px;
+}
+
+.navlinks {
+    list-style-type: none;
+}
+
+.navlinks li {
+    float: left;
+}
+
+.navlinks li a{
+    text-decoration: none;
+    color: #181818;
+    padding: 25px;
+}
+
