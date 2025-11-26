@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'DMSans';
+  src: url('/public/Fonts/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/public/Fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.home-sec {
+    background-image: linear-gradient(rgba(24, 24, 24, 0.9), rgba(24, 24, 24, 0.9)), url(../assets/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home-sec-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pose {
+    height: 100%;
+    align-items: center;
+}
+
+.top-text {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.name {
+    margin:0;
+    padding: 0;
+    font-family: 'SpaceMono';
+    font-size: 35px;
+    color: #3895d8;
+}
+
+.greeting {
+    margin:0;
+    padding: 0;
+    font-family: 'SpaceMono';
+    font-size: 25px;
+    color: white;
+}
