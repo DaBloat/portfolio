@@ -1,11 +1,12 @@
 import { Navbar } from './components';
-import { Home, Projects, Achievements, ContactMe } from './sections'
+import { Home, History, Projects, Achievements, ContactMe } from './sections'
 
 function App() {
   return (
     <>
       <Navbar />
       <Home />
+      <History />
       <Projects />
       <Achievements />
       <ContactMe />

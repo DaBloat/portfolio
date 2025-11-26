@@ -16,6 +16,7 @@
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 0 20px 0 5px;
 }
 
 .nav-logo {
@@ -30,6 +31,8 @@
 
 .navlinks {
     list-style-type: none;
+    display: flex;
+    gap: 30px;
 }
 
 .navlinks li {
@@ -39,6 +42,5 @@
 .navlinks li a{
     text-decoration: none;
     color: #181818;
-    padding: 25px;
 }
 

@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 import pose from '../assets/pose.png'
 import '../style/home.css'
 
@@ -6,15 +8,34 @@ export const Home = () => {
         <section id='me' className="section home-sec">
             <div className='home-sec-holder'>
                 <div>
-                    <h2 className='greeting'>kurt@portfolio:~$ whoami</h2>
-                    <h1 className='name'>Kurt Russel</h1>
-                    <h2 className='greeting'>kurt@portfolio:~$ current-status</h2>
-                    <h1 className='name'>Computer Engineering Student</h1>
-                    <h2 className='greeting'>kurt@portfolio:~$ cat interests.txt</h2>
-                    <h1 className='name'>Data Science | Linux Enthusiast | Dev</h1>
+                    <h2 className='commands'>kurt@portfolio:~$ whoami</h2>
+                    <h1 className='output'>Kurt Russel</h1>
+                    <h2 className='commands'>kurt@portfolio:~$ current-status</h2>
+                    <h1 className='output'>Computer Engineering Student</h1>
+                    <h2 className='commands'>kurt@portfolio:~$ cat interests.txt</h2>
+                    <h1 className='output'>Data Science | Linux Enthusiast | Dev</h1>
+                    <nav className='socials'>
+                        <ul className='social-links'>
+                            <li>
+                                <a href="#me">
+                                    <MdEmail size={35}/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#me">
+                                    <FaGithub size={35}/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#me">
+                                    <FaLinkedin size={35}/>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div>
-                    <img className='pose' src={pose}></img>
+                    <img alt='pose' className='pose' src={pose}></img>
                 </div>
             </div>
         </section>

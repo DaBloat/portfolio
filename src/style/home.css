@@ -32,13 +32,7 @@
     align-items: center;
 }
 
-.top-text {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.name {
+.output {
     margin:0;
     padding: 0;
     font-family: 'SpaceMono';
@@ -46,10 +40,34 @@
     color: #3895d8;
 }
 
-.greeting {
+.commands {
     margin:0;
     padding: 0;
     font-family: 'SpaceMono';
     font-size: 25px;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.social-links{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.social-links li {
+    float: left;
+    
+}
+
+.social-links li a{
+    text-decoration: none;
     color: white;
 }
