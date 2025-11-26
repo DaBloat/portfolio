@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'DMSans';
   src: url('../public/Fonts/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
@@ -16,4 +20,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.section {
+  height: 100vh;
+  padding: 100px 20px;
 }

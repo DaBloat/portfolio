@@ -6,12 +6,16 @@
 }
 
 .nav {
+    position: fixed;
     font-family: "SpaceMono";
     font-size: 25px;
     background-color: #3895d8;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-logo {
