@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'DMSans';
+  src: url('/public/Fonts/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/public/Fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: #121212;
+    border: 2px solid #1e293b;
+    border-radius: 5px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, border-color 0.5s ease
+}
+
+.card-logo-wrapper {
+    margin-top: 15px;
+    margin-bottom: 55px;
+}
+
+.card-diamond {
+    height: 160px;
+    width: 160px;
+    background: linear-gradient(135deg, #3895d8 0%, #005f99 40%, #4ade80 90%) ;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0 0 25px rgba(51, 187, 255, 0.4), inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+.card-logo {
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.card-logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+}
+
+.card:hover {
+    border: 2px solid #3895d8;
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(51, 187, 255, 0.4), inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+.logo {
+    height: 85px;
+    width: 85px;
+}
+
+.card-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.card-name {
+    font-family: 'SpaceMono';
+    color: #3895d8;
+    margin: 0;
+    padding: 0;
+}
+
+.card-description {
+    font-family: 'SpaceMono';
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding: 15px;  
+    text-align: center;
+}
+
+.card-tech {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-tech-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.card-tech-list li {
+    color: white;
+}
+
+/* cyan: #3895d8; */
+/* green #4ade80;  */
+/* dark #005f99; */

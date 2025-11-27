@@ -8,7 +8,14 @@ html {
 
 @font-face {
   font-family: 'DMSans';
-  src: url('../public/Fonts/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
+  src: url('/public/Fonts/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/public/Fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
