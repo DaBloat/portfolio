@@ -5,13 +5,32 @@ import bantai_logo from '../assets/BANTAI-logo.png'
 import seeenen_logo from '../assets/seeenen-logo.png'
 import ps_logo from '../assets/PS-logo.png'
 import aa_logo from '../assets/AA-logo.png'
+import kupass_logo from '../assets/kupass-logo.png'
+import huck_logo from '../assets/HUCK-logo.png'
+import tapsi_logo from '../assets/tapsi-logo.png'
 import { FaPython, FaReact, FaHtml5, FaCss3 } from "react-icons/fa"
 import { FaGears } from "react-icons/fa6"
-import { SiPytorch, SiJavascript, SiFlask, SiHuggingface, SiQt } from "react-icons/si"
+import { SiPytorch, SiJavascript, SiFlask, SiHuggingface, SiQt, SiScikitlearn, SiMysql} from "react-icons/si"
+import { DiSqllite } from "react-icons/di"
 import { TbBrandCpp } from "react-icons/tb"
 
 const python = {
     logo: <FaPython size={25}/>,
+    link: null
+}
+
+const scikit = {
+    logo: <SiScikitlearn size={25}/>,
+    link: null
+}
+
+const mysql = {
+    logo: <SiMysql size={25}/>,
+    link: null
+}
+
+const sqllite = {
+    logo: <DiSqllite size={25}/>,
     link: null
 }
 
@@ -100,6 +119,27 @@ const proj_aa = {
     stack: [python, qt]
 }
 
+const proj_kupass = {
+    logo: kupass_logo,
+    name:'KUPASS',
+    desc:'An integrated password management tool that generates secure credentials, stores them in a local database, and automates the login process for saved websites.',
+    stack: [python, sqllite]
+}
+
+const proj_huck = {
+    logo: huck_logo,
+    name:'HUCK',
+    desc:"Highly Unconventional Creative Knowledge (HUCK): The core AI engine responsible for the TAPSILogV2 System's facial recognition, powered by a KNN model.",
+    stack: [python, scikit]
+}
+
+const proj_tapsi = {
+    logo: tapsi_logo,
+    name:'TAPSILOG SYSTEM',
+    desc:"Total Activity Processed through a Strictly Implemented Log System (TAPSILog): A digital logging solution that utilizes QR for Subdivisions.",
+    stack: [python, qt, mysql]
+}
+
 export const Projects = () => {
     return(
         <section id='projects' className="section project-sec">
@@ -113,6 +153,9 @@ export const Projects = () => {
                 <Card project={proj_see_en_en}/>
                 <Card project={proj_ps}/>
                 <Card project={proj_aa}/>
+                <Card project={proj_kupass}/>
+                <Card project={proj_huck}/>
+                <Card project={proj_tapsi}/>
             </div>
         </section>
     )
