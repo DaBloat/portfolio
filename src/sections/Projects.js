@@ -8,7 +8,7 @@ export const Projects = () => {
                 <h3 className='header-command'>kurt@portfolio:~$ cd Projects</h3>
                 <h1 className='header-text'>Projects</h1>
             </div>
-            <div className='project-carousel'>
+            <div className="project-carousel">
                 <Card />
                 <Card />
                 <Card />

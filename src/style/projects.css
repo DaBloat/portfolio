@@ -5,9 +5,8 @@
   font-style: normal;
 }
 
-
 .project-text {
-    margin-bottom: 35px;
+    margin-bottom: 0px;
 }
 
 .header-command {
@@ -19,9 +18,9 @@
 .header-text {
     font-family: 'SpaceMono';
     color: #3895d8;
-    font-size: 75px;
+    font-size: 65px;
     padding: 0px;
-    margin: 0;
+    margin: 0px;
 }
 
 .project-carousel {
@@ -31,7 +30,8 @@
     flex-wrap: nowrap;
     flex-direction: row;
     overflow-x: auto;
-    padding: 40px;
+    overflow: hidden;
+    padding: 40px 0;
     gap: 20px;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
