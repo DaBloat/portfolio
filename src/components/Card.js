@@ -1,37 +1,21 @@
-import '../style/card.css'
-import logo from '../assets/logo_head.png'
-import { FaPython,   } from "react-icons/fa"
-import { SiTensorflow, SiJavascript } from "react-icons/si"
+import '../style/components/card.css'
+import { HorIcons } from './HorIcons'
 
-export const Card = () => {
+export const Card = ({project}) => {
     return (
         <div className='card'>
             <div className='card-logo-wrapper'>
                 <div className='card-diamond'>
                     <div className='card-logo'>
                         <div className='card-logo-content'>
-                            <img className='logo' src={logo} alt="logo"></img>
+                            <img className='logo' src={project.logo} alt="logo"></img>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='card-text'>
-                <h2 className='card-name'>PROJECT 1</h2>
-                <p className='card-description'>Boots blessed with enchantments to allow for swift movements. Useful in uncertain times such as these.</p>
-            </div>
-            <div className='card-tech'>
-                <ul className='card-tech-list'>
-                    <li>
-                        <FaPython size={25}/>
-                    </li>
-                    <li>
-                        <SiTensorflow size={25}/>
-                    </li>
-                    <li>
-                        <SiJavascript size={25}/>
-                    </li>
-                </ul>
-            </div>
+            <h2 className='card-name'>{project.name}</h2>
+            <p className='card-description'>{project.desc}</p>
+            <HorIcons items={project.stack} gap={20}/>
         </div>
     )
 }
